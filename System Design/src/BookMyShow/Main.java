@@ -1,7 +1,7 @@
-package BookMyShow.dtos;
+package BookMyShow;
 
-import BookMyShow.dtos.inventory.TheatreInventory;
-import BookMyShow.dtos.models.Theatre;
+import BookMyShow.inventory.TheatreInventory;
+import BookMyShow.models.Theatre;
 
 import java.io.BufferedReader;
 import java.io.IOException;

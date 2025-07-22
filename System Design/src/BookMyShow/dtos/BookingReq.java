@@ -1,8 +1,8 @@
 package BookMyShow.dtos;
 
-import BookMyShow.dtos.models.Seat;
-import BookMyShow.dtos.models.Show;
-import BookMyShow.dtos.models.Theatre;
+import BookMyShow.models.Seat;
+import BookMyShow.models.Show;
+import BookMyShow.models.Theatre;
 
 public class BookingReq {
     public int id;

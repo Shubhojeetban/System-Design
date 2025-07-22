@@ -1,4 +1,4 @@
-package BookMyShow.dtos.services;
+package BookMyShow.services;
 
 import BookMyShow.dtos.BookingReq;
 import BookMyShow.dtos.BookingRes;

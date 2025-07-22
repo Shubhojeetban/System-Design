@@ -1,4 +1,4 @@
-package BookMyShow.dtos.models;
+package BookMyShow.models;
 
 public class Seat {
     public int seatNo;

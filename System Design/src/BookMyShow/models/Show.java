@@ -1,4 +1,4 @@
-package BookMyShow.dtos.models;
+package BookMyShow.models;
 
 public class Show implements Comparable {
     public int id;

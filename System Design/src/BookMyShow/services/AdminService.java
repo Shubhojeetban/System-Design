@@ -1,8 +1,8 @@
-package BookMyShow.dtos.services;
+package BookMyShow.services;
 
-import BookMyShow.dtos.models.Screen;
-import BookMyShow.dtos.models.Show;
-import BookMyShow.dtos.models.Theatre;
+import BookMyShow.models.Screen;
+import BookMyShow.models.Show;
+import BookMyShow.models.Theatre;
 
 import java.util.List;
 
