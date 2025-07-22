@@ -1,6 +1,6 @@
 package BookMyShow;
 
-import BookMyShow.inventory.TheatreInventory;
+import BookMyShow.inventory.Inventory;
 import BookMyShow.models.Theatre;
 
 import java.io.BufferedReader;
@@ -12,7 +12,7 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("**** Welcome to Book Your Show ****");
         System.out.println("Please enter the code of your Nearest");
-        for (Theatre theatre: TheatreInventory.theatreList) {
+        for (Theatre theatre: Inventory.theatreList) {
             System.out.println(theatre);
         }
         int theatreId = Integer.parseInt(reader.readLine());

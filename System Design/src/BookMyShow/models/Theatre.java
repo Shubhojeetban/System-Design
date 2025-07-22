@@ -22,6 +22,13 @@ public class Theatre {
         return Optional.empty();
     }
 
+    public Optional<Screen> getScreen(Screen screen) {
+        for (Screen screen1 : screens) {
+            if (screen1.screenNo == screen.screenNo) return Optional.of(screen);
+        }
+        return Optional.empty();
+    }
+
     public void addScreens(int screenNo, int capacity) {
         Screen screen = new Screen(screenNo, capacity);
         screens.add(screen);
