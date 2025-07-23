@@ -5,9 +5,13 @@ import BookMyShow.models.Show;
 import BookMyShow.models.Theatre;
 
 public class BookingReq {
-    public int id;
     public Show show;
     public Theatre theatre;
-    public Seat seat;
+    public int seatNo;
 
+    public BookingReq(Theatre theatre, Show show, int seatNo) {
+        this.theatre = theatre;
+        this.show = show;
+        this.seatNo = seatNo;
+    }
 }

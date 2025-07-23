@@ -5,21 +5,12 @@ import java.util.List;
 import java.util.Optional;
 
 public class Theatre {
-    public int id;
     public String name;
     public List<Screen> screens;
 
-    public Theatre(int id, String name, String city, int noOfScreens) {
-        this.id = id;
+    public Theatre(String name,  int noOfScreens) {
         this.name = name;
         this.screens = new ArrayList<>(noOfScreens);
-    }
-
-    public Optional<Screen> getScreen(int screenNo) {
-        for (Screen screen : screens) {
-            if (screen.screenNo == screenNo) return Optional.of(screen);
-        }
-        return Optional.empty();
     }
 
     public Optional<Screen> getScreen(Screen screen) {
@@ -29,8 +20,7 @@ public class Theatre {
         return Optional.empty();
     }
 
-    public void addScreens(int screenNo, int capacity) {
-        Screen screen = new Screen(screenNo, capacity);
+    public void addScreen(Screen screen) {
         screens.add(screen);
     }
 
@@ -51,7 +41,6 @@ public class Theatre {
     @Override
     public String toString() {
         return "Theatre{" +
-                "id=" + id +
                 ", name='" + name + '\'' +
                 ", screens=" + screens +
                 '}';

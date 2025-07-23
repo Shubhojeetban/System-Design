@@ -2,5 +2,6 @@ package BookMyShow.dtos;
 
 public enum BookingStatus {
     BOOKED,
-    CANCELLED
+    CANCELLED,
+    NOT_BOOKED
 }

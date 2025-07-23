@@ -1,25 +1,21 @@
 package BookMyShow.models;
 
-public class Show implements Comparable {
-    public int id;
+public class Show {
     public String name;
     public Screen screen;
     public long startTime;
     public long endTime;
     public long duration;
+    public double price;
 
-    public Show(int id, String name, Screen screen, long startTime, long endTime, long duration) {
-        this.id = id;
+    public Show(String name, Screen screen, long startTime, long endTime) {
         this.name = name;
         this.screen = screen;
         this.startTime = startTime;
         this.endTime = endTime;
-        this.duration = duration;
+        this.duration = endTime - startTime;
+        this.price = duration * 50.00;
     }
 
-    @Override
-    public int compareTo(Object o) {
-        Show show = (Show)o;
-        return (int) (this.startTime - show.startTime);
-    }
+
 }

@@ -25,6 +25,21 @@ public class Screen {
         }
     }
 
+    public void addShow(Show show) {
+        for(Show show1 : shows) {
+            if((show.startTime <= show1.endTime  && show.startTime >= show1.startTime)
+                    || (show.endTime >= show1.startTime && show.endTime <= show1.endTime)) {
+                throw  new IllegalArgumentException("Show slot is already filled");
+            }
+            shows.add(show);
+        }
+    }
+
+    public Seat getSeat(int seatNo) {
+        for (Seat seat: seats) if(seat.seatNo == seatNo) return seat;
+        return null;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Screen screen)) return false;
